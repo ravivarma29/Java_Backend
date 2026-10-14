@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user" class="com.model.User" 	autowire="byType">
+    <property name="userId" value="2"></property>
+    <property name="name" value="ravi"></property>
+    <property name="skills">
+    			<list>
+						<value>JDBC</value>
+						<value>JDBC</value>
+						<value>API</value>
+						<value>JAVA</value>
+						<value>SPRING</value>
+				</list>
+	</property>
+	<!--   <property name="address"  ref="addr"></property>   -->
+				
+
+
+	<!-- <property value="hobbies"> <map> <entry key="1" value="cricket"></entry> S
+		</map> </property> -->
+    
+    </bean>
+    
+    <bean class ="com.model.Address"  id="address">
+    <property name="street"  value="gachibowli"></property>
+    <property name="zipcode"  value="505154"></property>
+    </bean>
+
+</beans>
