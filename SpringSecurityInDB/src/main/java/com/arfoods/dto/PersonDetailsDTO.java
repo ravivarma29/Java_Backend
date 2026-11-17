@@ -1,0 +1,20 @@
+package com.arfoods.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class PersonDetailsDTO {
+	
+	private int personId;
+	
+	private String userName;
+	
+	private String passWord;
+
+
+}
